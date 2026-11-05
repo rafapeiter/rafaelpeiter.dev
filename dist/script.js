@@ -11,6 +11,16 @@ let preferredTheme = readPreference('rp-theme');
 if (!['light', 'dark'].includes(preferredTheme)) preferredTheme = null;
 
 const english = new Map([
+  ['PROJETOS DE ENSINO', 'TEACHING PROJECTS'], ['Tecnologia em', 'Technology in'], ['sala de aula.', 'the classroom.'],
+  ['Ferramentas que desenvolvi para tornar conceitos de computação', 'Tools I developed to make computing concepts'], ['mais visuais e acessíveis nas disciplinas que leciono.', 'more visual and accessible in the courses I teach.'],
+  ['Recursão e algoritmos', 'Recursion and algorithms'], ['Simulador de Fibonacci', 'Fibonacci Simulator'], ['Programação paralela', 'Parallel programming'], ['Produtor-Consumidor', 'Producer-Consumer'], ['Comunicação de dados', 'Data communications'], ['Codificação Digital-Digital', 'Digital-to-Digital Encoding'],
+  ['Explore a árvore de chamadas de Fibonacci e veja como a recursão funciona, incluindo o recálculo de subproblemas.', 'Explore the Fibonacci call tree and see how recursion works, including repeated subproblem calculations.'],
+  ['Acompanhe um buffer compartilhado, ajuste as velocidades e entenda a espera quando ele está cheio ou vazio.', 'Watch a shared buffer, adjust the speeds and understand why processes wait when it is full or empty.'],
+  ['Transforme sequências de bits em gráficos de sinal com sete métodos de codificação, como Manchester, NRZ e AMI.', 'Turn bit sequences into signal graphs with seven encoding methods, including Manchester, NRZ and AMI.'],
+  ['Experimentar', 'Try it'], ['Ver código', 'View code'],
+  ['Tecnologias do simulador de Fibonacci', 'Fibonacci simulator technologies'], ['Experimentar o simulador de Fibonacci', 'Try the Fibonacci simulator'], ['Ver código do simulador de Fibonacci', 'View Fibonacci simulator code'],
+  ['Tecnologias do simulador Produtor-Consumidor', 'Producer-Consumer simulator technologies'], ['Experimentar o simulador Produtor-Consumidor', 'Try the Producer-Consumer simulator'], ['Ver código do simulador Produtor-Consumidor', 'View Producer-Consumer simulator code'],
+  ['Tecnologias do simulador de codificação digital', 'Digital encoding simulator technologies'], ['Experimentar o simulador de codificação digital', 'Try the digital encoding simulator'], ['Ver código do simulador de codificação digital', 'View digital encoding simulator code'],
   ['Projetos', 'Projects'], ['PROJETOS DE APLICATIVOS', 'APP PROJECTS'], ['Do código ao', 'From code to'], ['uso real.', 'everyday use.'],
   ['Aplicativos que fazem parte da minha trajetória', 'Apps that are part of my journey'], ['de desenvolvimento na CantúStange, para Android e iOS.', 'as a developer at CantúStange, for Android and iOS.'],
   ['Finanças pessoais', 'Personal finance'], ['Android e iOS', 'Android and iOS'], ['Histórico de compras', 'Purchase history'],
