@@ -1,0 +1,28 @@
+.technologies { padding-bottom: 42px; }
+.technologies .section-heading > p { max-width: 400px; }
+.tech-group { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 35px; padding: 27px 0; border-top: 1px solid var(--line); }
+.tech-group h3 { font: 500 17px/1.45 var(--display); letter-spacing: -.4px; max-width: 165px; margin: 13px 0 0; }
+.tech-count { display: inline-block; margin-left: 6px; padding: 2px 5px; border: 1px solid var(--line); border-radius: 4px; font: 10px var(--mono); letter-spacing: 0; vertical-align: middle; color: var(--muted); }
+.tech-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 11px; padding: 0; margin: 0; list-style: none; }
+.tech-list[aria-labelledby="tech-languages"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.tech-list li { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 10px; border: 1px solid var(--line); border-radius: 7px; font-size: 11px; font-weight: 650; line-height: 1.4; background: #ffffff70; }
+.tech-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: #fff; border-radius: 6px; flex-shrink: 0; }
+.tech-icon img { width: 28px; height: 28px; object-fit: contain; }
+.tech-context { display: flex; align-items: baseline; gap: 13px; color: var(--muted); font-size: 12px; margin: 3px 0 0 225px; line-height: 1.8; }
+.tech-context > span:first-child { color: var(--blue); font-size: 20px; }
+html[data-theme="dark"] .tech-list li { background: #142236; }
+@media(max-width: 1200px) {
+  .tech-group { grid-template-columns: 155px minmax(0, 1fr); gap: 25px; }
+  .tech-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tech-context { margin-left: 180px; }
+}
+@media(max-width: 800px) {
+  .technologies { padding-bottom: 20px; }
+  .technologies h2 { font-size: 37px; }
+  .tech-group { grid-template-columns: 1fr; gap: 20px; padding-block: 25px; }
+  .tech-group h3 { max-width: none; margin: 0; }
+  .tech-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tech-context { margin-left: 0; }
+}
+@media(max-width: 590px) { .tech-list, .tech-list[aria-labelledby="tech-languages"] { grid-template-columns: repeat(3, minmax(0, 1fr)); } .tech-list li { flex-direction: column; align-items: flex-start; padding: 12px; gap: 9px; } }
+@media(max-width: 360px) { .tech-list { gap: 8px; } .tech-list li { padding: 10px; font-size: 10px; } }
