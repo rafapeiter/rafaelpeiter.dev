@@ -1,6 +1,6 @@
 # Rafael Peiter — site pessoal
 
-Landing page pessoal para **rafaelpeiter.dev**, com apresentação profissional, atuação, tecnologias, trajetória e links para LinkedIn e GitHub.
+Landing page pessoal para **rafaelpeiter.dev**, com apresentação profissional, atuação, projetos de aplicativos, tecnologias, trajetória e links para LinkedIn e GitHub.
 
 ## Recursos
 
@@ -9,6 +9,7 @@ Landing page pessoal para **rafaelpeiter.dev**, com apresentação profissional,
 - Preferência manual de tema mantida entre visitas.
 - Layout adaptado para computadores e celulares.
 - Avatar ilustrado e ícones de tecnologias armazenados junto ao site.
+- Projetos Zada Finanças e Tá Barato com telas reais, descrições e links para as lojas Android e iOS.
 - Sem formulário, backend ou analytics.
 
 ## Executar e hospedar
@@ -38,3 +39,12 @@ Tipografia: Space Grotesk, Manrope e IBM Plex Mono, carregadas do Google Fonts c
 Ícones de tecnologias: [Devicon](https://github.com/devicons/devicon), commit `32fe1d3b3f36ad11f90ab94f7db59738139c2bf6`. Licença preservada em `dist/assets/tech/devicon-LICENSE.txt`. Alguns símbolos simples foram feitos especificamente para o site.
 
 Avatar criado a partir de foto fornecida pelo titular e escolhido por ele. A foto original não faz parte dos arquivos publicados.
+
+## Projetos de aplicativos
+
+A seção apresenta somente Zada Finanças e Tá Barato, confirmados pelo titular. As descrições resumem recursos descritos nas lojas oficiais, sem atribuir autoria exclusiva, números de usuários ou tecnologias de implementação não confirmadas. As imagens são materiais oficiais dos aplicativos da CantuStange e permanecem no idioma original. As descrições, rótulos e textos alternativos têm versões em português e inglês.
+
+- Zada Finanças: https://play.google.com/store/apps/details?id=br.com.cantustange.zadafinancas e https://apps.apple.com/br/app/zada-finan%C3%A7as/id1629493500
+- Tá Barato: https://play.google.com/store/apps/details?id=br.com.cantustange.tabarato e https://apps.apple.com/br/app/ta-barato/id1631590649
+
+Os endereços de origem dos ícones e das telas estão em `dist/assets/projects/sources.json`. Os direitos das marcas e dos materiais dos aplicativos pertencem aos respectivos titulares.

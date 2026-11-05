@@ -11,6 +11,14 @@ let preferredTheme = readPreference('rp-theme');
 if (!['light', 'dark'].includes(preferredTheme)) preferredTheme = null;
 
 const english = new Map([
+  ['Projetos', 'Projects'], ['PROJETOS DE APLICATIVOS', 'APP PROJECTS'], ['Do código ao', 'From code to'], ['uso real.', 'everyday use.'],
+  ['Aplicativos que fazem parte da minha trajetória', 'Apps that are part of my journey'], ['de desenvolvimento na CantúStange, para Android e iOS.', 'as a developer at CantúStange, for Android and iOS.'],
+  ['Finanças pessoais', 'Personal finance'], ['Android e iOS', 'Android and iOS'], ['Histórico de compras', 'Purchase history'],
+  ['Controle financeiro pessoal para organizar contas, receitas, despesas e cartões em um só lugar, com gráficos e resumos para acompanhar o dia a dia.', 'A personal finance app for organizing accounts, income, expenses and cards in one place, with charts and summaries for everyday tracking.'],
+  ['Leitura de notas fiscais por QR Code, com histórico de compras e pesquisa de produtos para acompanhar os preços pagos no dia a dia. Desenvolvido para notas de consumidor do Rio Grande do Sul.', 'Scan receipt QR codes, keep a purchase history and search products to track the prices you have paid. Designed for consumer receipts issued in Rio Grande do Sul, Brazil.'],
+  ['Receitas e despesas', 'Income and expenses'], ['Cartões de crédito', 'Credit cards'], ['Gráficos e resumos', 'Charts and summaries'], ['Leitura de QR Code', 'QR code scanning'], ['Pesquisa de produtos', 'Product search'],
+  ['Lançamentos e contas no Zada Finanças', 'Transactions and accounts in Zada Finanças'], ['Gráficos e resumo financeiro no Zada Finanças', 'Charts and financial summary in Zada Finanças'], ['Histórico de notas fiscais no Tá Barato', 'Receipt history in Tá Barato'], ['Leitura de QR Code no Tá Barato', 'QR code scanning in Tá Barato'],
+  ['Recursos do Zada Finanças', 'Zada Finanças features'], ['Recursos do Tá Barato', 'Tá Barato features'], ['Zada Finanças no Google Play', 'Zada Finanças on Google Play'], ['Zada Finanças na App Store', 'Zada Finanças on the App Store'], ['Tá Barato no Google Play', 'Tá Barato on Google Play'], ['Tá Barato na App Store', 'Tá Barato on the App Store'],
   ['Tecnologias', 'Technologies'], ['REPERTÓRIO TÉCNICO', 'TECHNICAL BACKGROUND'], ['Tecnologias na', 'Technologies along'], ['minha trajetória.', 'my journey.'],
   ['Linguagens, plataformas e ferramentas que já usei', 'Languages, platforms and tools I have used'], ['em projetos de software, pesquisa e ensino.', 'in software projects, research and teaching.'],
   ['Linguagens', 'Languages'], ['Ferramentas e plataformas', 'Tools and platforms'], ['Pesquisa e experimentação', 'Research and experimentation'],
@@ -51,7 +59,7 @@ while (walker.nextNode()) {
   const original = node.nodeValue;
   if (!node.parentElement.closest('script, style') && english.has(original.trim())) textNodes.push({ node, original, key: original.trim() });
 }
-const attributeNodes = [...document.querySelectorAll('[aria-label]')].filter(element => english.has(element.getAttribute('aria-label'))).map(element => ({ element, original: element.getAttribute('aria-label') }));
+const attributeNodes = [...document.querySelectorAll('[aria-label], [alt]')].flatMap(element => ['aria-label', 'alt'].filter(attribute => english.has(element.getAttribute(attribute))).map(attribute => ({ element, attribute, original: element.getAttribute(attribute) })));
 function updateControlLabels() {
   const en = language() === 'en';
   const open = menuButton.getAttribute('aria-expanded') === 'true';
@@ -65,7 +73,7 @@ function setLanguage(value, persist = false) {
   const en = value === 'en';
   root.dataset.language = en ? 'en' : 'pt'; root.lang = en ? 'en' : 'pt-BR';
   textNodes.forEach(({ node, original, key }) => { node.nodeValue = en ? original.replace(key, english.get(key)) : original; });
-  attributeNodes.forEach(({ element, original }) => element.setAttribute('aria-label', en ? english.get(original) : original));
+  attributeNodes.forEach(({ element, attribute, original }) => element.setAttribute(attribute, en ? english.get(original) : original));
   languageButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === (en ? 'en' : 'pt'))));
   document.title = en ? 'Rafael Peiter — R&D Manager and lecturer' : 'Rafael Peiter — Gerente P&D e professor';
   document.querySelector('meta[name="description"]').content = en ? 'Rafael Peiter. R&D Manager, developer, systems analyst and lecturer. Technology, software and shared knowledge.' : 'Rafael Peiter. Gerente P&D, desenvolvedor, analista e professor. Tecnologia, software e conhecimento conectados.';
@@ -93,5 +101,5 @@ menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria
 navigation.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') { setMenu(false); menuButton.focus(); } });
 document.addEventListener('click', event => { if (!event.target.closest('.header')) setMenu(false); });
-matchMedia('(max-width: 1000px)').addEventListener('change', () => setMenu(false));
+matchMedia('(max-width: 1100px)').addEventListener('change', () => setMenu(false));
 setLanguage(language()); setTheme(root.dataset.theme || (systemTheme.matches ? 'dark' : 'light'));
