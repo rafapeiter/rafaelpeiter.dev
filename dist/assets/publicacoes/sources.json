@@ -1,0 +1,86 @@
+{
+  "survey_date": "2026-11-05",
+  "source_document": "Levantamento_Publicacoes_Rafael_Peiter.pdf",
+  "records": [
+    {
+      "year": "2026",
+      "type": "Evento científico",
+      "title": "Desenvolvimento de um framework para padronização e consolidação de resultados de ferramentas de análise de segurança para Terraform",
+      "venue": "VII Mostra de Extensão, Ciência e Tecnologia da UNISC",
+      "authors": "João Felipe Staub; Rafael Peiter",
+      "url": "https://online.unisc.br/acadnet/anais/index.php/mostraextensaounisc/article/view/26137"
+    },
+    {
+      "year": "2026",
+      "type": "Evento científico",
+      "title": "Sistema de geração automática de relatórios em HTML e JavaScript com uso de inteligência artificial",
+      "venue": "VII Mostra de Extensão, Ciência e Tecnologia da UNISC",
+      "authors": "Roberto Araujo Giuliani; Rafael Peiter",
+      "url": "https://online.unisc.br/acadnet/anais/index.php/mostraextensaounisc/article/view/26215"
+    },
+    {
+      "year": "2022",
+      "type": "Evento científico",
+      "title": "Reconstrução de aplicativo orientado por estratégias de interação homem-computador",
+      "venue": "III Mostra de Extensão, Ciência e Tecnologia da UNISC",
+      "authors": "Kaio Vinícius de Paiva Rodrigues; Daniela Duarte da Silva Bagatini; Rafael Peiter; Eduardo Vinicius Faleiro",
+      "url": "https://online.unisc.br/acadnet/anais/index.php/mostraextensaounisc/article/view/22723"
+    },
+    {
+      "year": "2015",
+      "type": "Evento científico",
+      "title": "O problema da evasão escolar e suas estratégias",
+      "venue": "V Congresso Brasileiro de Engenharia de Produção (CONBREPRO)",
+      "authors": "Roger Douglas Machado; Rafael Peiter; Jacques Nelson Corleta Schreiber; Elpidio Oscar Benitez Nara; Guilherme Augusto Schwingel",
+      "url": "https://www.researchgate.net/publication/286060932_O_problema_da_evasao_escolar_e_suas_estrategias"
+    },
+    {
+      "year": "2015",
+      "type": "Evento científico",
+      "title": "Simulação computacional para a otimização do processo de atendimento em uma agência de serviços previdenciários",
+      "venue": "XXII Simpósio de Engenharia de Produção (SIMPEP)",
+      "authors": "Jônatas Inácio de Freitas; Daniel Assmann; Rafael Peiter; Jorlei Luis Baierle; João Carlos Furtado",
+      "url": "https://www.escavador.com/sobre/6294891/rafael-peiter"
+    },
+    {
+      "year": "2013",
+      "type": "Evento científico",
+      "title": "Man-Computer Interaction System Using Kinect",
+      "venue": "XIX International Conference on Industrial Engineering and Operations Management (ICIEOM)",
+      "authors": "Rafael Peiter; Geovane Griesang; Rolf Fredi Molz",
+      "url": "https://www.escavador.com/sobre/6294891/rafael-peiter"
+    },
+    {
+      "year": "2013",
+      "type": "Evento científico",
+      "title": "Development of a communication mechanism between Pedagogical Agents in a Virtual Learning Environment",
+      "venue": "VII Workshop-Escola de Sistemas de Agentes (WESAAC)",
+      "authors": "Geovane Griesang; Rafael Peiter; Rolf Fredi Molz; Rejane Frozza; Gilberto Dessbesell Júnior",
+      "url": "https://www.escavador.com/sobre/6294891/rafael-peiter"
+    },
+    {
+      "year": "2013",
+      "type": "Evento científico",
+      "title": "Análise comparativa de técnicas/métodos/protocolos de comunicação para sistemas multiagentes",
+      "venue": "XXXIII Encontro Nacional de Engenharia de Produção (ENEGEP)",
+      "authors": "Geovane Griesang; Rafael Peiter; Rolf Fredi Molz; Rejane Frozza; Gilberto Dessbesell Júnior",
+      "url": "https://www.escavador.com/sobre/6294891/rafael-peiter"
+    },
+    {
+      "year": "2016",
+      "type": "Dissertação de mestrado",
+      "title": "Desenvolvimento de um algoritmo para detecção de obstáculos utilizando visão estéreo",
+      "venue": "Mestrado em Sistemas e Processos Industriais · UNISC",
+      "authors": "Rafael Peiter",
+      "url": "https://www.unisc.br/pt/cursos/todos-os-cursos/mestrado-doutorado/mestrado/mestrado-em-sistemas-e-processos-industriais/dissertacoes-defendidas-ppgspi"
+    },
+    {
+      "year": "2012",
+      "type": "TCC",
+      "title": "Sistema de interação entre usuário e computador utilizando o Kinect",
+      "venue": "Ciência da Computação · UNISC",
+      "authors": "Rafael Peiter",
+      "url": "https://www.escavador.com/sobre/6294891/rafael-peiter"
+    }
+  ]
+}

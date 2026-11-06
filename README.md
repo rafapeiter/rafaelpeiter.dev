@@ -55,3 +55,7 @@ Os endereços de origem dos ícones e das telas estão em `dist/assets/projects/
 ## Versões do layout
 
 A versão 2 está na raiz de `dist/`; a versão 1 fica em `dist/v1/` e preserva o visual do commit `241f88c`, incluindo os projetos de ensino. Os arquivos de imagem são compartilhados. Ambas usam o mesmo idioma e tema salvos no navegador. A escolha de versão fica em `rp-version`; sem escolha anterior, abre a versão 2. Os links `/?version=2` e `/v1/?version=1` permitem escolher explicitamente uma versão. A troca conserva a seção atual quando existe nos dois layouts.
+
+## Publicações acadêmicas
+
+As duas versões incluem os 10 títulos do levantamento fornecido pelo titular, datado de 05/11/2026: oito trabalhos em eventos, TCC e dissertação. A seção destaca três títulos recentes e permite expandir os demais, com autoria, evento, ano e fonte. Os títulos e nomes dos eventos permanecem no idioma original; os textos de interface e descrições têm versão em inglês. O PDF original fica disponível para download em `dist/assets/publicacoes/`. Os registros históricos podem remeter ao currículo bibliográfico em vez do texto completo. Os dois trabalhos de 2026 usam os links diretos encontrados nos anais da UNISC.
