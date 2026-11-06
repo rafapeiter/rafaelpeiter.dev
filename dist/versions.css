@@ -1,7 +1,22 @@
-.version-switcher { display: flex; justify-content: flex-end; margin-top: -9px; margin-bottom: 8px; }
-.version-options { display: inline-flex; gap: 3px; padding: 4px; border: 1px solid var(--line); border-radius: 99px; background: var(--white); }
-.version-options a { display: inline-flex; align-items: center; justify-content: center; min-height: 34px; padding: 6px 15px; border-radius: 99px; color: var(--muted); font: 500 11px/1.5 var(--mono); }
-.version-options a[aria-current="page"] { background: var(--blue); color: var(--paper); }
-.version-options a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.version-options a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
-@media(max-width: 480px) { .version-switcher { margin-top: -4px; margin-bottom: 4px; } .version-options a { padding-inline: 13px; font-size: 10px; } }
+.version-options { display: flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 99px; padding-inline: 10px; font: 10px var(--mono); flex-shrink: 0; }
+.version-options > span { color: var(--muted); opacity: .5; }
+.version-options a { display: inline-flex; align-items: center; justify-content: center; position: relative; min-height: 32px; padding: 5px 0; color: var(--muted); font: inherit; }
+.version-options a[aria-current="page"] { color: var(--ink); }
+.version-options a[aria-current="page"]:after { content: ''; position: absolute; height: 1px; left: 0; right: 0; bottom: 3px; background: currentColor; }
+.version-options a:hover { color: var(--blue); }
+.version-options a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+.version-options[data-layout-version="1"] { border: 0; padding-inline: 0; font-size: 11px; gap: 9px; }
+.version-options[data-layout-version="1"] a { min-height: 36px; padding-block: 8px; }
+@media(max-width: 480px) {
+  .version-options { padding-inline: 8px; font-size: 9px; gap: 5px; }
+  .version-options[data-layout-version="1"] { font-size: 10px; gap: 6px; }
+  .header .brand { font-size: 14px; }
+}
+@media(max-width: 360px) {
+  .header { gap: 6px; }
+  .header .brand { font-size: 13px; }
+  .page-preferences { gap: 3px; }
+  .version-options, .language-options { padding-inline: 6px; gap: 4px; font-size: 9px; }
+  .version-options[data-layout-version="1"] { gap: 4px; font-size: 9px; }
+  .theme-toggle { width: 24px; }
+}
