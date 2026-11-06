@@ -11,6 +11,13 @@ let preferredTheme = readPreference('rp-theme');
 if (!['light', 'dark'].includes(preferredTheme)) preferredTheme = null;
 
 const english = new Map([
+  ['GERENTE P&D · DESENVOLVEDOR · PROFESSOR', 'R&D MANAGER · DEVELOPER · LECTURER'],
+  ['Olá, eu sou o Rafael. Desenvolvo sistemas, entendo problemas e compartilho o que aprendo — na CantúStange e em sala de aula na UNISC.', 'Hi, I’m Rafael. I build systems, understand problems and share what I learn — at CantúStange and in the classroom at UNISC.'],
+  ['Código, contexto', 'Code, context'], ['AGORA', 'NOW'], ['DESDE 2024', 'SINCE 2024'], ['EM SISTEMAS DESDE', 'WORKING IN SYSTEMS SINCE'], ['Rio Grande do Sul, Brasil', 'Rio Grande do Sul, Brazil'],
+  ['Minha trajetória em resumo', 'My background at a glance'], ['Avatar ilustrado de Rafael Peiter', 'Illustrated avatar of Rafael Peiter'],
+  ['01 · ATUAÇÃO', '01 · WHAT I DO'], ['02 · PROJETOS', '02 · PROJECTS'], ['03 · STACK', '03 · STACK'], ['04 · TRAJETÓRIA', '04 · BACKGROUND'],
+  ['Tecnologia em sala de aula', 'Technology in the classroom'], ['Repertório técnico.', 'Technical background.'], ['Experiência que vira repertório.', 'Experience that shapes perspective.'],
+  ['© 2026 rafaelpeiter.dev — Código, contexto e conhecimento.', '© 2026 rafaelpeiter.dev — Code, context and knowledge.'],
   ['PROJETOS DE ENSINO', 'TEACHING PROJECTS'], ['Tecnologia em', 'Technology in'], ['sala de aula.', 'the classroom.'],
   ['Ferramentas que desenvolvi para tornar conceitos de computação', 'Tools I developed to make computing concepts'], ['mais visuais e acessíveis nas disciplinas que leciono.', 'more visual and accessible in the courses I teach.'],
   ['Recursão e algoritmos', 'Recursion and algorithms'], ['Simulador de Fibonacci', 'Fibonacci Simulator'], ['Programação paralela', 'Parallel programming'], ['Produtor-Consumidor', 'Producer-Consumer'], ['Comunicação de dados', 'Data communications'], ['Codificação Digital-Digital', 'Digital-to-Digital Encoding'],
@@ -93,7 +100,7 @@ function setLanguage(value, persist = false) {
 }
 function setTheme(value, persist = false) {
   root.dataset.theme = value; root.style.colorScheme = value;
-  document.querySelector('meta[name="theme-color"]').content = value === 'dark' ? '#0c1521' : '#edf2f6';
+  document.querySelector('meta[name="theme-color"]').content = value === 'dark' ? '#0e1116' : '#f4f6ef';
   updateControlLabels(); if (persist) { preferredTheme = value; remember('rp-theme', value); }
 }
 function setMenu(open) { menuButton.setAttribute('aria-expanded', String(open)); navigation.toggleAttribute('data-open', open); updateControlLabels(); }

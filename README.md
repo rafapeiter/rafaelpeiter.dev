@@ -8,6 +8,7 @@ Landing page pessoal para **rafaelpeiter.dev**, com apresentação profissional,
 - Temas claro e escuro; na primeira visita, o tema segue a configuração do aparelho.
 - Preferência manual de tema mantida entre visitas.
 - Layout adaptado para computadores e celulares.
+- Identidade visual em grafite e verde-lima, apresentação em blocos, projetos compactos e trajetória em linhas.
 - Avatar ilustrado e ícones de tecnologias armazenados junto ao site.
 - Projetos Zada Finanças e Tá Barato com telas reais, descrições e links para as lojas Android e iOS.
 - Projetos de ensino: simuladores de Fibonacci, Produtor-Consumidor e Codificação Digital-Digital, com ilustrações dos conceitos e links para demonstração e código-fonte.

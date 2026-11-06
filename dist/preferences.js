@@ -12,5 +12,5 @@
   document.documentElement.dataset.language = language;
   document.documentElement.lang = language === 'en' ? 'en' : 'pt-BR';
   document.documentElement.style.colorScheme = theme;
-  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#0c1521' : '#edf2f6';
+  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#0e1116' : '#f4f6ef';
 })();

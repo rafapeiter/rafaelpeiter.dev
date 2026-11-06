@@ -1,47 +1,54 @@
-.projects { padding-bottom: 28px; }
-.projects .section-heading > p { max-width: 410px; }
-.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.app-project { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
-.project-overview { display: flex; align-items: center; gap: 16px; padding: 25px 27px; }
-.project-icon { width: 56px; height: 56px; border-radius: 13px; flex-shrink: 0; }
-.project-category { color: var(--muted); font: 9px/1.5 var(--mono); margin: 0 0 5px; }
-.project-overview h3 { font: 500 29px/1.15 var(--display); letter-spacing: -.9px; margin: 0 0 5px; }
-.project-platforms { font: 10px/1.5 var(--body); color: var(--muted); margin: 0; }
-.project-media { padding: 26px 34px; border-block: 1px solid var(--line); }
-.project-media--financas { background: #e1e9f1; }
-.project-media--tabarato { background: #dceee4; }
-.project-screens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px; max-width: 330px; margin-inline: auto; }
-.project-screens img { width: 100%; height: auto; display: block; border: 1px solid #ffffff50; border-radius: 8px; box-shadow: 0 10px 21px #122c4820; }
-.project-copy { display: flex; flex-direction: column; flex: 1; padding: 25px 27px 27px; }
-.project-copy > p { font-size: 13px; line-height: 1.9; color: var(--muted); margin: 0 0 18px; }
-.project-features { display: flex; gap: 7px; flex-wrap: wrap; padding: 0; margin: 0 0 26px; list-style: none; }
-.project-features li { font: 9px/1.5 var(--mono); color: var(--ink); border: 1px solid var(--line); padding: 5px 8px; border-radius: 4px; }
-.project-links { display: flex; align-items: center; gap: 24px; margin-top: auto; flex-wrap: wrap; }
-.project-links a { display: inline-flex; align-items: center; gap: 13px; font-size: 12px; font-weight: 750; padding-block: 5px; }
-.project-links a span { color: var(--blue); font-size: 19px; }
-.project-links a:hover { color: var(--blue); }
-.teaching { padding-bottom: 28px; }
-.teaching .section-heading > p { max-width: 420px; }
-.teaching-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.teaching-project { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
-.teaching-visual { padding: 20px 18px; border-bottom: 1px solid var(--line); background: var(--paper); color: var(--blue); }
-.teaching-visual svg { display: block; width: 100%; height: 160px; }
-.diagram-lines { stroke: var(--blue); stroke-width: 1.5; }
+.projects { border-top: 1px solid var(--line); padding-bottom: 45px; }
+.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.app-project { display: grid; grid-template-columns: minmax(0, 1fr) 156px; grid-template-rows: auto 1fr; gap: 0 23px; overflow: hidden; border: 1px solid var(--line); border-radius: 25px; background: var(--white); padding: 30px; }
+.project-overview { grid-column: 1; grid-row: 1; display: flex; align-items: center; gap: 12px; margin-bottom: 17px; }
+.project-icon { width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0; }
+.project-category { font: 9px/1.6 var(--mono); color: var(--muted); margin: 0 0 6px; }
+.project-overview .project-category { display: none; }
+.project-overview h3 { font-size: 26px; line-height: 1.1; letter-spacing: -.7px; margin: 0 0 5px; }
+.project-platforms { font: 9px/1.5 var(--mono); color: var(--muted); margin: 0; }
+.project-media { grid-column: 2; grid-row: 1 / 3; align-self: center; min-width: 0; }
+.project-screens { background: #0b0e13; border: 5px solid #333c47; border-radius: 23px; overflow: hidden; padding: 4px; box-shadow: 0 8px 20px #0002; }
+.project-screens img { width: 100%; height: auto; display: block; border-radius: 14px; }
+.project-screens img + img { display: none; }
+.project-copy { display: flex; flex-direction: column; min-width: 0; }
+.project-copy > p { font-size: 12px; line-height: 1.85; color: var(--muted); margin-bottom: 18px; }
+.project-features { display: flex; gap: 6px; flex-wrap: wrap; list-style: none; padding: 0; margin: 0 0 20px; }
+.project-features li { font: 9px/1.6 var(--mono); color: var(--muted); border: 1px solid var(--line); border-radius: 5px; padding: 4px 7px; }
+.app-project .project-features { display: none; }
+.project-links { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 17px; margin-top: auto; }
+.project-links a { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 750; min-height: 36px; }
+.project-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.project-links a span { color: var(--blue); }
+.app-project .project-links { gap: 8px; }
+.app-project .project-links a { border: 1px solid var(--line); border-radius: 99px; padding: 8px 11px; font-size: 10px; }
+.app-project .project-links a:first-child { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.app-project .project-links a:first-child span { color: inherit; }
+.teaching { padding-top: 20px; padding-bottom: 80px; }
+.teaching .section-heading { margin-bottom: 28px; }
+.teaching h2 { font-size: 29px; letter-spacing: -.9px; }
+.teaching .section-heading > p { font-size: 12px; }
+.teaching-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.teaching-project { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--white); }
+.teaching-visual { padding: 20px 28px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.teaching-visual svg { display: block; width: 100%; height: 125px; }
+.diagram-lines { stroke: var(--blue); stroke-width: 1.4; }
 .diagram-nodes { fill: var(--white); stroke: var(--line); }
-.diagram-nodes .diagram-filled { fill: var(--paper); stroke: var(--blue); }
-.diagram-text { fill: var(--ink); font: 12px var(--mono); }
+.diagram-nodes > rect:first-child, .diagram-nodes .diagram-filled { fill: var(--accent); stroke: var(--accent); }
+.diagram-text { fill: var(--muted); font: 12px var(--mono); }
+.teaching-project:first-child .diagram-text text:first-child, .teaching-project:nth-child(2) .diagram-text text:nth-child(-n+3) { fill: var(--accent-ink); }
 .diagram-grid { stroke: var(--line); stroke-dasharray: 3 4; }
-.diagram-signal { stroke: var(--blue); stroke-width: 2.5; stroke-linejoin: round; }
-.teaching-copy { display: flex; flex: 1; flex-direction: column; padding: 25px 23px; }
-.teaching-copy h3 { font-size: 26px; line-height: 1.2; letter-spacing: -.8px; margin: 5px 0 17px; }
-.teaching-copy > p:not(.project-category) { font-size: 13px; line-height: 1.9; color: var(--muted); margin-bottom: 20px; }
+.diagram-signal { stroke: var(--blue); stroke-width: 2.4; stroke-linejoin: round; }
+.teaching-copy { display: flex; flex: 1; flex-direction: column; padding: 25px; }
+.teaching-copy .project-category { text-transform: uppercase; font-size: 8px; letter-spacing: .7px; }
+.teaching-copy h3 { font-size: 23px; line-height: 1.2; letter-spacing: -.6px; margin: 7px 0 15px; }
+.teaching-copy > p:not(.project-category) { font-size: 12px; line-height: 1.85; color: var(--muted); margin-bottom: 18px; }
 .teaching-copy .project-features { margin-top: auto; }
-.teaching-copy .project-links { margin-top: 0; gap: 20px; }
-@media(min-width: 801px) { .teaching-copy h3 { min-height: 63px; } }
-@media(max-width: 1100px) { .teaching-grid { gap: 16px; } .teaching-copy { padding: 22px 18px; } .teaching-copy h3 { font-size: 24px; } .teaching-copy .project-links { gap: 14px; } .teaching-copy .project-links a { gap: 7px; } }
-@media(max-width: 800px) { .teaching-grid { grid-template-columns: 1fr; gap: 25px; } .teaching { padding-bottom: 12px; } .teaching-copy { padding: 24px; } .teaching-visual svg { max-width: 340px; margin-inline: auto; } .teaching-copy .project-links { gap: 24px; } }
-html[data-theme="dark"] .project-media--financas { background: #172b42; }
-html[data-theme="dark"] .project-media--tabarato { background: #17392f; }
-@media(max-width: 1100px) { .project-overview, .project-copy { padding-inline: 23px; } .project-media { padding-inline: 25px; } }
-@media(max-width: 800px) { .projects-grid { grid-template-columns: 1fr; gap: 25px; } .projects h2 { font-size: 37px; } .projects { padding-bottom: 12px; } .project-overview, .project-copy { padding: 22px; } .project-media { padding: 24px; } }
-@media(max-width: 390px) { .project-overview { gap: 13px; } .project-overview h3 { font-size: 26px; } .project-icon { width: 50px; height: 50px; } .project-screens { gap: 13px; } .project-links { gap: 21px; } }
+.teaching-copy .project-links { margin-top: 0; }
+.teaching-copy .project-links a:first-child { color: var(--blue); }
+@media(min-width: 801px) { .teaching-copy h3 { min-height: 56px; } }
+@media(max-width: 1150px) { .app-project { grid-template-columns: minmax(0, 1fr) 125px; padding: 23px; gap: 0 17px; } .project-overview h3 { font-size: 23px; } .project-icon { width: 32px; height: 32px; } .project-overview { gap: 10px; } }
+@media(max-width: 950px) { .projects-grid { grid-template-columns: 1fr; } .app-project { grid-template-columns: minmax(0, 1fr) 155px; padding: 30px; gap: 0 35px; } .project-overview h3 { font-size: 29px; } .project-copy > p { font-size: 13px; } .project-copy { max-width: 420px; } .teaching-copy { padding: 22px; } .teaching-copy h3 { font-size: 22px; } }
+@media(max-width: 800px) { .teaching { padding-bottom: 55px; } .teaching-grid { grid-template-columns: 1fr; gap: 20px; } .teaching-visual svg { max-width: 350px; margin-inline: auto; } .teaching-copy { padding: 27px; } .teaching-copy h3 { font-size: 26px; } .teaching-copy > p:not(.project-category) { font-size: 13px; } }
+@media(max-width: 480px) { .app-project { grid-template-columns: minmax(0, 1fr) 103px; padding: 23px; gap: 0 15px; border-radius: 22px; } .project-overview { display: block; margin-bottom: 14px; } .project-icon { width: 29px; height: 29px; margin-bottom: 11px; } .project-overview h3 { font-size: 25px; } .project-copy > p { font-size: 11px; } .project-screens { border-width: 4px; border-radius: 18px; padding: 3px; } .project-screens img { border-radius: 11px; } .project-links a { font-size: 10px; } .app-project .project-links a { font-size: 9px; gap: 6px; padding-inline: 9px; } .teaching h2 { font-size: 27px; } .teaching-copy { padding: 24px; } }
+@media(max-width: 360px) { .app-project { grid-template-columns: minmax(0, 1fr) 87px; gap: 0 12px; padding: 19px; } .project-overview h3 { font-size: 23px; } }
