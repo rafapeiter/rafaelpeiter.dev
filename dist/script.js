@@ -11,6 +11,7 @@ let preferredTheme = readPreference('rp-theme');
 if (!['light', 'dark'].includes(preferredTheme)) preferredTheme = null;
 
 const english = new Map([
+  ['Versão do site', 'Site version'], ['Versão 1', 'Version 1'], ['Versão 2', 'Version 2'],
   ['GERENTE P&D · DESENVOLVEDOR · PROFESSOR', 'R&D MANAGER · DEVELOPER · LECTURER'],
   ['Olá, eu sou o Rafael. Desenvolvo sistemas, entendo problemas e compartilho o que aprendo — na CantúStange e em sala de aula na UNISC.', 'Hi, I’m Rafael. I build systems, understand problems and share what I learn — at CantúStange and in the classroom at UNISC.'],
   ['Código, contexto', 'Code, context'], ['AGORA', 'NOW'], ['DESDE 2024', 'SINCE 2024'], ['EM SISTEMAS DESDE', 'WORKING IN SYSTEMS SINCE'], ['Rio Grande do Sul, Brasil', 'Rio Grande do Sul, Brazil'],

@@ -1,0 +1,7 @@
+.version-switcher { display: flex; justify-content: flex-end; margin-top: -9px; margin-bottom: 8px; }
+.version-options { display: inline-flex; gap: 3px; padding: 4px; border: 1px solid var(--line); border-radius: 99px; background: var(--white); }
+.version-options a { display: inline-flex; align-items: center; justify-content: center; min-height: 34px; padding: 6px 15px; border-radius: 99px; color: var(--muted); font: 500 11px/1.5 var(--mono); }
+.version-options a[aria-current="page"] { background: var(--blue); color: var(--paper); }
+.version-options a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.version-options a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+@media(max-width: 480px) { .version-switcher { margin-top: -4px; margin-bottom: 4px; } .version-options a { padding-inline: 13px; font-size: 10px; } }

@@ -8,6 +8,7 @@ Landing page pessoal para **rafaelpeiter.dev**, com apresentação profissional,
 - Temas claro e escuro; na primeira visita, o tema segue a configuração do aparelho.
 - Preferência manual de tema mantida entre visitas.
 - Layout adaptado para computadores e celulares.
+- Seletor entre a versão 1 (visual anterior, azul) e a versão 2 (atual, grafite e lima), com preferência salva.
 - Identidade visual em grafite e verde-lima, apresentação em blocos, projetos compactos e trajetória em linhas.
 - Avatar ilustrado e ícones de tecnologias armazenados junto ao site.
 - Projetos Zada Finanças e Tá Barato com telas reais, descrições e links para as lojas Android e iOS.
@@ -50,3 +51,7 @@ A seção apresenta somente Zada Finanças e Tá Barato, confirmados pelo titula
 - Tá Barato: https://play.google.com/store/apps/details?id=br.com.cantustange.tabarato e https://apps.apple.com/br/app/ta-barato/id1631590649
 
 Os endereços de origem dos ícones e das telas estão em `dist/assets/projects/sources.json`. Os direitos das marcas e dos materiais dos aplicativos pertencem aos respectivos titulares.
+
+## Versões do layout
+
+A versão 2 está na raiz de `dist/`; a versão 1 fica em `dist/v1/` e preserva o visual do commit `241f88c`, incluindo os projetos de ensino. Os arquivos de imagem são compartilhados. Ambas usam o mesmo idioma e tema salvos no navegador. A escolha de versão fica em `rp-version`; sem escolha anterior, abre a versão 2. Os links `/?version=2` e `/v1/?version=1` permitem escolher explicitamente uma versão. A troca conserva a seção atual quando existe nos dois layouts.
